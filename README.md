@@ -64,7 +64,7 @@ ___
 
 :iphone: iOS : [AppStore Link][iOS Link]
 
-[iOS Link]: https://apps.apple.com/us/app/%EA%B1%B4%EC%A6%88%EC%95%A4%EB%A0%88%EC%9D%B4%EC%B2%BC%EC%8A%A4/id6450149470
+[iOS Link]: https://apps.apple.com/kr/app/%EA%B1%B4%EC%A6%88%EC%95%A4%EB%A0%88%EC%9D%B4%EC%B2%BC%EC%8A%A4/id6450149470
 
 :iphone: Android : [Google PlayStore Link][GooglePlayStore Link]
 
