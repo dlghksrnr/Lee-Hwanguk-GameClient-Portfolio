@@ -3,6 +3,11 @@
 ![GraphicImage](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/124248051/78bfa49e-fdaa-44d1-8ca9-11d6c8234d19)
 
 ___
+<img src="https://img.shields.io/badge/system planning-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
+🔴  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Concept <br>
+🔴  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Economy System <br>
+🔴  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Level Balance <br>
+___
 <img src="https://img.shields.io/badge/participation list-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
 
 🔴 GUI<br>
@@ -21,6 +26,11 @@ ___
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager_Chest <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager_gamble <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager_shop(LHKDataManager_Partial) <br>
+
+🔴 DataTable<br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: chest_data <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: shop_data <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: gamble_data <br>
 
 🔴 Encryption<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager <br>
