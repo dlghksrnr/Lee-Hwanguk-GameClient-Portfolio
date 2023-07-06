@@ -39,6 +39,7 @@ ___
 
 <img src="https://img.shields.io/badge/Release-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
 - Title : GunsN'Rachels(건즈 앤 레이첼스)<br>
+- Genre : Log-like, Hack and Slash, Shooting game
 - Engine : UnityEngine3D<br>
 - Platform : Android, iOS<br>
 - Release Date : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)<br>
