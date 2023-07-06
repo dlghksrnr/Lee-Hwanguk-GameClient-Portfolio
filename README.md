@@ -53,8 +53,8 @@ ___
 [GooglePlayStore Link]: https://play.google.com/store/apps/details?id=com.teamvizeon.gunsandrachels&hl=ko
 
 ___
-https://img.shields.io/badge/just%20the%20message-8A2BE2
-
+<img src="https://img.shields.io/badge/Blog-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
+-https://dlghksrnr.tistory.com/
 
 
 
