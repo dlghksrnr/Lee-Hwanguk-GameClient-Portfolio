@@ -2,7 +2,7 @@
 ![GraphicImage](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/124248051/78bfa49e-fdaa-44d1-8ca9-11d6c8234d19)
 
 ___
-<img src="https://img.shields.io/badge/participation list-F2BB13?style=flat&logo=gamedeveloper&logoColor=white" width="130" height="30">
+<img src="https://img.shields.io/badge/participation list-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
 
 🔴 GUI<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Town Shop UI <br>
@@ -36,13 +36,14 @@ ___
 
 ___
 
-# Release
+<img src="https://img.shields.io/badge/Release-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
 - Title : GunsN'Rachels(건즈 앤 레이첼스)<br>
 - Engine : UnityEngine3D<br>
 - Platform : Android, iOS<br>
 - Release Date : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)<br>
 - Producer : Team Vizeon<br>
 
+___
 ⬇️ Download in Google PlayStore, AppStore <br>
 :iphone: iOS : [AppStore Link][iOS Link]
 
@@ -54,7 +55,7 @@ ___
 
 ___
 <img src="https://img.shields.io/badge/Blog-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
--https://dlghksrnr.tistory.com/
+📄 https://dlghksrnr.tistory.com/
 
 
 
