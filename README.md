@@ -2,13 +2,14 @@
 
 ![GraphicImage](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/124248051/78bfa49e-fdaa-44d1-8ca9-11d6c8234d19)
 
-___
+***
 
 <img src="https://img.shields.io/badge/system planning-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
-🔴  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Concept <br>
-🔴  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Economy System <br>
-🔴  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Level Balance <br>
-___
+🔴  Concept <br>
+🔴  Economy System <br>
+🔴  Level Balance <br>
+
+***
 
 <img src="https://img.shields.io/badge/participation list-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
 
