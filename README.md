@@ -1,11 +1,12 @@
-# Game Client Lee Hwanguk
+<img src="https://img.shields.io/badge/Game%20Client%20Lee%20Hwanguk-8A2BE2" width="200" height="30">
+
 ![GraphicImage](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/124248051/78bfa49e-fdaa-44d1-8ca9-11d6c8234d19)
 
 ___
 <img src="https://img.shields.io/badge/participation list-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
 
 🔴 GUI<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Town Shop UI <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Sanctuary Shop UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Dungeon Shop UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Dice UI <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: BossHealthBar UI <br>
@@ -19,7 +20,7 @@ ___
 🔴 DataManager<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager_Chest <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager_gamble <br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager_gamble(LHKDataManager_Partial) <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: DataManager_shop(LHKDataManager_Partial) <br>
 
 🔴 Encryption<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager <br>
@@ -28,7 +29,7 @@ ___
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager_Setting <br>
  
 🔴 Production<br>
- &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: phong1SG_2D <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: phong1SG_2D(Dice 2D Shader) <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: Dice Particle System <br>
 
 🔴 CoroutaineTrackerTool<br>
@@ -44,7 +45,9 @@ ___
 - Producer : Team Vizeon<br>
 
 ___
+<img src="https://img.shields.io/badge/Download-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
 ⬇️ Download in Google PlayStore, AppStore <br>
+
 :iphone: iOS : [AppStore Link][iOS Link]
 
 [iOS Link]: https://apps.apple.com/us/app/%EA%B1%B4%EC%A6%88%EC%95%A4%EB%A0%88%EC%9D%B4%EC%B2%BC%EC%8A%A4/id6450149470
