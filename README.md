@@ -3,10 +3,6 @@
 
 [![LeeHwanguk](https://img.shields.io/badge/LeeHwanguk-Green)](https://github.com/LeeHwanguk)
 
-<a href="https://dlghksrnr.tistory.com/" target="_blank">
-  <img src="https://img.shields.io/badge/Blog-Green" alt="Blog">
-</a>
-
 
 
 
