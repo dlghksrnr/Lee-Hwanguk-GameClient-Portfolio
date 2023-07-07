@@ -1,6 +1,5 @@
 <img src="https://img.shields.io/badge/Game%20Client%20Lee%20Hwanguk-8A2BE2" width="200" height="30">
 
-![GraphicImage](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/124248051/78bfa49e-fdaa-44d1-8ca9-11d6c8234d19)
 
 ***
 
@@ -49,8 +48,10 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: CoroutineTrackerWindow <br>
 
 ___
-
 <img src="https://img.shields.io/badge/Release-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
+
+![GraphicImage](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/124248051/78bfa49e-fdaa-44d1-8ca9-11d6c8234d19)
+
 - Title : GunsN'Rachels(건즈 앤 레이첼스)<br>
 - Genre : Log-like, Hack and Slash, Shooting game<br>
 - Engine : UnityEngine3D<br>
