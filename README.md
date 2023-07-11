@@ -76,13 +76,14 @@ ___
 
 ![GraphicImage](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/124248051/78bfa49e-fdaa-44d1-8ca9-11d6c8234d19)
 
-- Title : GunsN'Rachels(건즈 앤 레이첼스)<br>
-- Genre : Log-like, Hack and Slash, Shooting game<br>
-- Engine : UnityEngine3D<br>
-- Platform : Android, iOS<br>
-- Release Date : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)<br>
-- Producer : Team Vizeon<br>
-
+- 타이틀 : GunsN'Rachels(건즈 앤 레이첼스)<br>
+- 장르 : Log-like, Hack and Slash, Shooting game<br>
+- 앤진 : UnityEngine3D<br>
+- 플랫폼 : Android, iOS<br>
+- 출시일 : 2023. 6. 7 (Android)  2023. 6. 16 (iOS)<br>
+- 제작 : Team Vizeon<br>
+- 홍보영상 : https://www.youtube.com/watch?v=uf8yAuG5YM0
+- 플레이 영상 : https://www.youtube.com/watch?v=wNlCI4cgI1s
 ___
 <img src="https://img.shields.io/badge/Download-F2BB13?style=flat&logo=gamedeveloper&logoColor=white">
 ⬇️ Download in Google PlayStore, AppStore <br>
