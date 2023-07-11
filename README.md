@@ -50,7 +50,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: shop_data <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: gamble_data <br>
 
-## Encryption<br>
+## InfoManager<br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager_Player <br>
  &nbsp;&nbsp;&nbsp;&nbsp; :heavy_check_mark: InfoManager_PossessionAmount <br>
