@@ -27,8 +27,17 @@
 3. 게임에서 사용될 데이터를 정리한 데이터 테이블을 제작하였습니다. <br>
 ***
 📄 개발에 참여한 목록입니다.
+1. UI
+2. EventDispacher
+3. Chest,DropItem
+4. Boss
+5. DataTable
+6. DataManager
+7. InfoManager
+8. CoroutineTool
+9. Encryption
 
-##  UI
+##  1. UI
 ### 🛒 ShopUI
 - 상점에는 '마을상점' 과 '던전상점' 으로 나뉘게됩니다. '마을상점' 과 '던전상점'은 서로 다른 기능을 가지고 있습니다. <br>
 - 유저는 매번 다른 아이템을 구입 할 수 있도록 제작하였습니다. 추상팩토리 패턴을 이용하여 장비마다 다른 속성을 부여한 후, 상점 초기화 시점에서 매번 다른 장비를 생성하도록 제작하였습니다. <br>
@@ -79,7 +88,7 @@
  #### 📄 scripts
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIBossHealthBar <br>
 
-## EventDispatcher
+## 2. EventDispatcher
  - 게임 내에서 발생하는 모든 이벤트를 관리하는 이벤트 디스패치 방식입니다.<br>
  - 모든 객체들에서 참조하기 위하여 싱글톤으로 제작하였습니다.<br>
  - 이벤트를 등록하고(AddListener) 호출하는(Dispatch) 메서드를 정의하고 반환값에는 모든타입을 사용 할 수있도록 제네릭<T>으로 정의하였습니다.<br>
@@ -90,7 +99,7 @@
  
 
  
-## Chest, DropItem
+## 3. Chest, DropItem
  - 모든 씬에서 생성되는 Chest와 Item(장비)를 관리하는 오브잭트 입니다. <br>
  - Chest는 유저가 던전 룸을 클리어 하게되면 얻을 수 있는 드랍 상자입니다. <br>
  - 유저가 던전 룸을 클리어 한다면 이벤트를 호출한 후 Chest를 생성하도록 제작하였습니다. <br>
@@ -105,7 +114,7 @@
  
 
 
-## Boss<br>
+## 4. Boss<br>
  - 스테이지의 가장 마지가 룸에는 Boss룸으로 지정되어있습니다.<br>
  - 각 스테이지마다 출연하는 보스다 다르고, 각 보스마다 다른 공격패턴과 체력, 이동속도를 가지고 있습니다.<br>
  - 보스 마다 다른 공격패턴을 지니게 하기위해 전략패턴을 사용하여 제작하였습니다. <br> 
@@ -132,7 +141,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 AttackPattern09 <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 AttackPattern14 <br>
  
- ## DataTable<br>
+ ## 5. DataTable<br>
  - 게임 내에서 사용되는 DataTable 입니다. <br>
  - chest_data는 스테이지와 난이도마다 출현하는 상자의 종류, 드랍되는 장비의 갯수, 드랍 재화양에 대한 data입니다. <br>
  - shop_data는 상점에서 출현하는 장비의 이름, 등급, spritename, 타입, 스팩에 대한 data입니다. <br>
@@ -143,7 +152,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 shop_data <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 gamble_data <br>
  
- ## DataManager<br>
+ ## 6. DataManager<br>
  - DataManager는 게임 내에서 변하지 않는 데이터(chest_data,shop_data,gamble_data)에 대한 스크립트입니다.<br>
  - 외부의 스크립트에서 접근하기 위하여 싱글톤으로 제작되어있고, Load할때에는 JsonConvert.DeserializeObject를 이용하여 Json 데이터를 역직렬화 하고 불러오는 방식입니다.<br>
  - 사용되는 data의 종류가 많음으로 partial 클래스를 사용하여 제작되었습니다. <br>
@@ -153,7 +162,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 DataManager_gamble <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 DataManager_shop(LHKDataManager_Partial) <br>
 
- ## InfoManager<br>
+ ## 7. InfoManager<br>
  - InfoManager는 게임 내에서 변하는 데이터(현재 스테이지, 게임 설정값, 플레이어의 스텟 등)에 대한 스크립트 입니다.<br>
  - DataManager와 동일하게 싱글톤으로 제작하였고 Save할때는 JsonConvert.SerializeObject를 이용하여 직렬화, Load할때는 JsonConvert.DeserializeObject를 이용한 역직렬화 방식입니다. <br>
 
@@ -164,7 +173,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 InfoManager_Setting <br>
  ___
 
-## 🧰 Coroutine Tool
+## 8. 🧰 Coroutine Tool
 - 씬에서 동작중인 모든 코루틴을 조회하는 툴입니다.
 - 해당 코루틴 버튼을 클릭하면 코루틴을 정의하고 실행하고있는 스크립트를 보여줄 수 있게 제작하였습니다.
 - 게임이 실행 중일때 코루틴을 조회하고있다면 프레임드랍에 큰 영향을 미치는 버그가 있었습니다.
@@ -176,7 +185,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 CoroutineTrackerWindow <br>
 ___
 
-## 🔑 Encryption
+## 9. 🔑 Encryption
 - 게임 내에서 Save/Load 되는 데이터를 암호화/복호화 작업을 했습니다. <br>
 - AES 대칭키 알고리즘을 이용하여 저장되어 있는 Info를 Load 할때에는 복호합니다<br>
 - Info를 Sava 할때에는 암호화를 합니다<br>
