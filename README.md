@@ -78,7 +78,8 @@
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIDice <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 DiceGoods <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIdiceResultPopup <br>
- &nbsp;&nbsp;&nbsp;&nbsp; 🔴 DiceGo <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; 🔴 DiceScript <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; 🔴 phong1SG_2D <br>
 
  ### ◻️ BossHealthBarUI
  - Boss의 체력을 게임 씬에서 보여주는 UI입니다. <br>
@@ -118,17 +119,19 @@
 ## 4. Boss<br>
  - 스테이지의 가장 마지가 룸에는 Boss룸으로 지정되어있습니다.<br>
  - 각 스테이지마다 출연하는 보스다 다르고, 각 보스마다 다른 공격패턴과 체력, 이동속도를 가지고 있습니다.<br>
- - 보스 마다 다른 공격패턴을 지니게 하기위해 전략패턴을 사용하여 제작하였습니다. <br> 
+ - 보스 마다 다른 공격패턴을 지니게 하기위해 전략패턴을 사용하여 제작하였습니다. <br>
+ - 보스의 투사체인 Bullet은 최적화를 위하여 오브잭트 풀링을 이용하였습니다. <br>
  - 보스는 체력의 정도에 따라 행동 Phase가 변경되며 각 Phase는 코루틴으로 정의 한 후 공격패턴 보일 수 있습니다. <br>
  - 보스는 모두 특유의 애니메이션을 갖고 있음으로, AnimationEvent를 이용하여 해당 프레임에 공격 패턴이 동작하고 있습니다. <br>
  - 추상클래스를 모든 보스에게 상속 시킨 후 공통되는 기능들을 정의하였습니다. 만약 구현내용이 변경될 수 있는 메서드라면 abstract, 구현내용이 변경될 일이 없다면 virtual/override로 메서드를 정의하였습니다.<br>
  - 체력이 0 이하가 된 보스는 Chest를 출현시켜야 함으로 EventDispatcer에 정의된 Event발생을 통하여 ChestItemGenerator 스크립트에게 Event를 전달하고있습니다.<br>
 
  #### 📄 scripts
- &nbsp;&nbsp;&nbsp;&nbsp; 🔴 1StageBoss <br>
- &nbsp;&nbsp;&nbsp;&nbsp; 🔴 2StageBoss <br>
- &nbsp;&nbsp;&nbsp;&nbsp; 🔴 3StageBoss <br>
- &nbsp;&nbsp;&nbsp;&nbsp; 🔴 4StageBoss <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; 🔴 FireWorm <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; 🔴 EvilWizard <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; 🔴 DarkWizard <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; 🔴 Slime <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; 🔴 Demon <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 AbsBossAttackPattern <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 AbsBossClass <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 AttackPattern01 <br>
@@ -141,6 +144,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 AttackPattern08 <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 AttackPattern09 <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 AttackPattern14 <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; 🔴 BulletPool <br>
  
  ## 5. DataTable<br>
  - 게임 내에서 사용되는 DataTable 입니다. <br>
