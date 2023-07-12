@@ -56,6 +56,7 @@
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIShopGoods <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIShopPoupInvenVolume <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 AbsShopFactory <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; 🔴 ShopFactory
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 ShopSwordFactory <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 ShopAxeFactory <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 ShopArrowFactory <br>
