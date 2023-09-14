@@ -48,6 +48,14 @@
 - UI의 구조는 Canvas를 가장 최상단인 Director로 정의한 후 하위 목록인 UIShop->UIShopGride->UIShopPopup로 설계하였습니다. <br>
 - UI는 UGUI를 사용하여 구성하였습니다 <br>
 
+ ### GIF
+ 1. 마을 상점입니다.<br>
+ ![마을상점_video_](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/9a643e22-aa74-4367-b08e-8017afece168)
+
+ 2. 던전 상점입니다.<br>
+ ![던전상점(video)](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/7c6e4884-9686-46f4-9e0c-39f5db41d88d)
+
+
  #### 📄 scripts
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIShopDirector <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIShop <br>
@@ -73,6 +81,13 @@
  - 랜덤 주사위의 result연출을 표현하기 위하여 DoTween을 이용하여 연출을 표현했습니다. <br>
  - Diamond 등급일 때 파티클을 이용하여 연출을 표현했습니다. <br>
 
+ ### GIF
+ 1. Dice Button 제어<br>
+ ![Dice Button](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/79e07cc1-d7dd-4992-99a7-6ffd1cf57642)
+
+ 2. Diamond 등급 파티클, DoTween연출<br>
+ ![Dice연출](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/c864af51-abc1-461f-bdd1-50c7752b45a3)
+
  #### 📄 scripts  
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIDiceDirector <br>
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIDice <br>
@@ -86,7 +101,13 @@
  - UGUI의 Slide를 이용하여 제작하였습니다. <br>
  - UIBossHealthBar는 현재 스테이즈 Boss의 hp를 참조하고 있습니다. <br>
  - 유저가 Boss룸으로 입장할때 Boss의 HealthBar가 0~Max까지 Lerp하게 채워지는 연출을 위해 코루틴으로 제어하였습니다. <br>
+ - Boss의 피격 시 HealthBar가 줄어드는 것 또한 Lerp하게 줄어드는 연출로 표현하였습니다. <br>
+ 
+ ### GIF
+ 1. BossHealthBar <br>
+ ![BossHealthBar](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/7e1d2f9f-8660-4796-bda3-3638971f0354)
 
+    
  #### 📄 scripts
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 UIBossHealthBar <br>
 
@@ -108,7 +129,13 @@
  - Item은 Chest에서 드랍되는 드랍아이템 입니다.(장비, 재화, 무기, 보조무기, 소모아이템)<br>
  - Chest를 중심으로 360도 방향으로 생성됩니다. 유저는 Item을 획득 하기위해 OnTriggerEnter2D를 이용하거나 UniRx 플러그인을 이용한 터치를 이용하여 획득할 수 있습니다. <br>
  - Item은 각각 다른 포지션을 갖고 있으며 서로 곂치거나 너무 좁은 간격으로 생성되지 않도록 Item마다 최소간격을 정의한 후 Physics2D.OverlapCircleAll를 이용하여 간격을 넓혀 주었습니다. 만약 겹치거나 간격이 충분 하지 않다면 다시 위치를 찾고 지정합니다. <br>
- - SpriteGlow 효과를 표현하기 위하여 AllIn
+ - SpriteGlow 효과를 표현하기 위하여 All In 1 Sprite Shader 를 사용하였습니다. <br>
+ - DropItem 는 플레이어와의 충돌 반응과 스크린 터치로 반응하고 획득할 수 있도록 UniRx를 이용하여 제작하였습니다. <br>
+
+ ### GIF
+ 1. Chest 생성과 DropItem 배치, 획득 입니다. <br>
+ ![Chest](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/a5e59f06-c82c-4d7b-9100-fb9bc42fa672)
+
 
  #### 📄 scripts
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 ChestItemGenerator<br>
@@ -125,6 +152,24 @@
  - 보스는 모두 특유의 애니메이션을 갖고 있음으로, AnimationEvent를 이용하여 해당 프레임에 공격 패턴이 동작하고 있습니다. <br>
  - 추상클래스를 모든 보스에게 상속 시킨 후 공통되는 기능들을 정의하였습니다. 만약 구현내용이 변경될 수 있는 메서드라면 abstract, 구현내용이 변경될 일이 없다면 virtual/override로 메서드를 정의하였습니다.<br>
  - 체력이 0 이하가 된 보스는 Chest를 출현시켜야 함으로 EventDispatcer에 정의된 Event발생을 통하여 ChestItemGenerator 스크립트에게 Event를 전달하고있습니다.<br>
+
+ ### GIF
+ 1. 유저의 위치로 추격하는 유도미사일 패턴입니다. <br>
+ ![AttackPattern03,FireWormHomingMissile 유도미사일](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/03b3f962-1acb-4d04-a632-149ce703abbc)
+ 2. Boss로 부터 360 방향으로 퍼져나가는 패턴입니다. <br>
+ ![AttackPattern02 360도 사격](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/acc52fbb-c725-4e93-b40f-f08e372364f7)
+ 3. 유저의 위치를 기준으로 일정한 범위 내에 랜덤한 좌표로 떨어지는 패턴입니다. <br>
+ ![AttackPattern06-메테오](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/5c09826a-767f-4537-bae9-643b6e02a615)
+ 4. Boss로 부터 부채꼴 형태로 퍼져나가는 패턴입니다. <br>
+ ![AttackPattern05-부채꼴](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/00798521-46fb-456d-bdb7-cf972fe401e0)
+ 5. 점점 작아지는 Bullet패턴입니다. Dotween을 사용하여 연출했습니다. <br>
+ ![DarkWizardSplashBullet-Dotween연출](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/16b95069-0cb4-441b-b858-ddbe170e03c6)
+ 6. 근접 공격 패턴입니다. <br>
+ ![근접공격](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/8bb5ef6c-67d3-43dc-a020-699707cb3294)
+ 7. 근접 범위 공격과 360도 패턴입니다. <br>
+ ![근접범위-360-공격](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/d897851c-c050-4ab4-8864-252797fff239)
+ 8. 360도 방향으로 회전하며 퍼져나가는 패턴입니다. <br>
+ ![AttackPattern14-360도-회전공격](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/ba7f8748-e8a9-405a-9aeb-b68aa5904966)
 
  #### 📄 scripts
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 FireWorm <br>
@@ -186,6 +231,10 @@
 - 씬이 전환될때에도 hierachy에 모든 StartCoroutine 키워드를 검색한다면 프레임 드랍에 영향이 있을 수 있었음으로 Refesh버튼을 클릭하면 조회하는 방식으로 개선했습니다.
 - 자세한 사용법은 (https://github.com/dlghksrnr/CoroutineTrackerWindow) 에 README를 참고해주세요.
 
+ ### GIF
+ 1. Coroutine Tool입니다. 씬이 전환된다면 ReFresh버튼으로 현재 씬에서 사용중인 Coroutine들을 확인할 수 있습니다. 해당 코루틴의 버튼을 클릭한다면 코루틴이 정의되고 있는 스크립트로 이동하게 됩니다. <br>
+ ![CoroutineTool](https://github.com/dlghksrnr/Lee-Hwanguk-GameClient-Portfolio/assets/142652894/55bba1ac-33e9-4883-881d-8961cd67f827)
+
  #### 📄 scripts
  &nbsp;&nbsp;&nbsp;&nbsp; 🔴 CoroutineTrackerWindow <br>
 ___
@@ -194,6 +243,7 @@ ___
 - 게임 내에서 Save/Load 되는 데이터를 암호화/복호화 작업을 했습니다. <br>
 - AES 대칭키 알고리즘을 이용하여 저장되어 있는 Info를 Load 할때에는 복호합니다<br>
 - Info를 Sava 할때에는 암호화를 합니다<br>
+
 
 #### 📄 scripts
 &nbsp;&nbsp;&nbsp;&nbsp; 🔴 PlayerPrefsEncryption <br>
