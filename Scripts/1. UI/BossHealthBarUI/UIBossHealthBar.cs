@@ -14,27 +14,24 @@ public class UIBossHealthBar : MonoBehaviour
     private eHpType hpType;
     [SerializeField]
     private GameObject boss;
-
     public int bossMaxHp;
     public int bossHp;
-
     [SerializeField]
     private Image fill;
-
     private float fillHpBar;
     private Damageable bossDamageable;
-
     private Demon demon;
     private int demonMaxHp;
     private int demonHp;
-
     private bool isFilling;
     private float fillSpeed = 0.7f;
+    
     private void Start()
     {
         this.fill.transform.parent.gameObject.SetActive(false);
         this.fill.enabled = false;
     }
+    
     public void Init()
     {
         this.hpType = eHpType.BOSS;
@@ -53,11 +50,11 @@ public class UIBossHealthBar : MonoBehaviour
             this.boss.name, bossMaxHp, bossHp);
         }
 
-        //fill 코루틴 시작
         fill.fillAmount = 0f;
         isFilling = true;
         StartCoroutine(FillCoroutine(bossMaxHp));
     }
+
     public void DemonInit()
     {
         this.hpType = eHpType.DEMON;
@@ -72,11 +69,11 @@ public class UIBossHealthBar : MonoBehaviour
             this.demon.name, demonMaxHp, demonHp);
         }
 
-        //fill코루틴 시작
         fill.fillAmount = 0f;
         isFilling = true;
         StartCoroutine(FillCoroutine(demonMaxHp));
     }
+
     private IEnumerator FillCoroutine(int maxHp)
     {
         float timer = 0f;
