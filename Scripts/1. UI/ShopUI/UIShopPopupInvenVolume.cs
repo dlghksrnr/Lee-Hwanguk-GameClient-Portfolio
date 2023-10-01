@@ -94,7 +94,7 @@ public class UIShopPopupInvenVolume : MonoBehaviour
             {
                 this.txtCurCount.text = "";
                 this.txtIcon.text = "";
-                this.txtIncCount.text = "<Color=red>Gold ºÎÁ·</Color>";
+                this.txtIncCount.text = "<Color=red>Gold ë¶€ì¡±</Color>";
                 this.txtIncCount.rectTransform.anchoredPosition = new Vector3(-11f, -103f, 0f);
                 this.txtPriceDetail.text = this.CalculateInventoryPrice(InfoManager.instance.inventoryInfo.InventoryCount).ToString();
                 this.OffSelectButton();
@@ -103,7 +103,7 @@ public class UIShopPopupInvenVolume : MonoBehaviour
     }
 
     /// <summary>
-    /// ÀÎº¥ ¿ë·® Áõ°¡¸Ş¼­µå, ÀÓ½Ã ÃÖ´ë ¿ë·® 9
+    /// ì¸ë²¤ ìš©ëŸ‰ ì¦ê°€ë©”ì„œë“œ, ì„ì‹œ ìµœëŒ€ ìš©ëŸ‰ 9
     /// </summary>
     private void IncreaseInventoryVolum()
     {
@@ -132,14 +132,14 @@ public class UIShopPopupInvenVolume : MonoBehaviour
             {
                 this.txtCurCount.text = "";
                 this.txtIcon.text = "";
-                this.txtIncCount.text = "<Color=red>Gold ºÎÁ·</Color>"; 
+                this.txtIncCount.text = "<Color=red>Gold ë¶€ì¡±</Color>"; 
                 this.txtIncCount.rectTransform.anchoredPosition = new Vector3(-11f, -103f, 0f);
             }
         }
     }
 
     /// <summary>
-    /// ÀÎº¥Åä¸® ¿ë·® Áõ°¡ °¡°İ ¼³Á¤
+    /// ì¸ë²¤í† ë¦¬ ìš©ëŸ‰ ì¦ê°€ ê°€ê²© ì„¤ì •
     /// </summary>
     /// <param name="inventorySize"></param>
     /// <returns></returns>
@@ -156,14 +156,9 @@ public class UIShopPopupInvenVolume : MonoBehaviour
         return Mathf.Min(price, maxPrice);
     }
 
-
-
-
-
-
     private void OffSelectButton()
     {
-        //¹öÆ° ºñÈ°¼ºÈ­, ¹öÆ° ¾ËÆÄ°ª ÁÙÀÌ±â
+        //ë²„íŠ¼ ë¹„í™œì„±í™”, ë²„íŠ¼ ì•ŒíŒŒê°’ ì¤„ì´ê¸°
         var btn = this.btnSelect.GetComponent<Button>();
         btn.enabled = false;
 
@@ -174,7 +169,7 @@ public class UIShopPopupInvenVolume : MonoBehaviour
     }
     private void OnSelectButton()
     {
-        //¹öÆ° ºñÈ°¼ºÈ­, ¹öÆ° ¾ËÆÄ°ª ÁÙÀÌ±â
+        //ë²„íŠ¼ ë¹„í™œì„±í™”, ë²„íŠ¼ ì•ŒíŒŒê°’ ì¤„ì´ê¸°
         var btn = this.btnSelect.GetComponent<Button>();
         btn.enabled = true;
 
@@ -185,7 +180,7 @@ public class UIShopPopupInvenVolume : MonoBehaviour
     }
 
     /// <summary>
-    /// ¿ë·®Áõ°¡ ºñ¿ë, ÀÓ½Ã°ª 1300Gold
+    /// ìš©ëŸ‰ì¦ê°€ ë¹„ìš©, ì„ì‹œê°’ 1300Gold
     /// </summary>
     private void ConsumptionGold()
     {
